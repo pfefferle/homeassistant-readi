@@ -10,7 +10,7 @@ Brings the live sensor data that the re@di cities publish into Home Assistant:
 | Type | What you get | Updated |
 |---|---|---|
 | Temperature sensors (about 110 LoRaWAN sensors in Ettlingen) | Temperature, humidity | every few minutes |
-| Weather stations (Ettlingen) | Temperature, humidity, pressure, rain, wind, gusts, wind direction, global radiation; more values disabled by default | every 10 minutes |
+| Weather stations (Ettlingen) | A weather entity with the current values (no forecast, the condition only shows rain and lightning), plus sensors for temperature, humidity, pressure, rain, wind, gusts, wind direction, global radiation; more values disabled by default | every 10 minutes |
 | Traffic counters (Ettlingen) | Vehicles per hour, average speed; per vehicle class and per direction disabled by default | hourly, about one hour behind |
 
 So far only Ettlingen publishes live sensor data. Other re@di cities are added

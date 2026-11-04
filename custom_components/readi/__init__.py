@@ -11,7 +11,7 @@ from .api import ReadiClient
 from .const import DOMAIN
 from .coordinator import ReadiConfigEntry, ReadiCoordinator, device_id
 
-PLATFORMS = [Platform.SENSOR]
+PLATFORMS = [Platform.SENSOR, Platform.WEATHER]
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ReadiConfigEntry) -> bool:

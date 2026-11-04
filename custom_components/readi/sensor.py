@@ -245,6 +245,16 @@ LAST_MEASUREMENT = ReadiSensorDescription(
 )
 
 
+def device_info(sensor: dict[str, Any]) -> DeviceInfo:
+    """The device of a selected portal sensor."""
+    return DeviceInfo(
+        identifiers={(DOMAIN, device_id(sensor))},
+        name=sensor["name"],
+        manufacturer=sensor.get("publisher"),
+        configuration_url=f"{PORTAL_URL}/dataset/{PACKAGES[sensor['kind']]}",
+    )
+
+
 def _descriptions_for(kind: str, values: dict[str, Any], name: str) -> list[ReadiSensorDescription]:
     """Descriptions for the values a sensor actually delivers."""
     found = [d for d in DESCRIPTIONS[kind] if d.key in values]
@@ -318,12 +328,7 @@ class ReadiSensor(CoordinatorEntity[ReadiCoordinator], SensorEntity):
         self._primary = primary
         self._attr_unique_id = f"{self._device_id}:{description.key}"
         self._attr_attribution = sensor.get("attribution")
-        self._attr_device_info = DeviceInfo(
-            identifiers={(DOMAIN, self._device_id)},
-            name=sensor["name"],
-            manufacturer=sensor.get("publisher"),
-            configuration_url=f"{PORTAL_URL}/dataset/{PACKAGES[sensor['kind']]}",
-        )
+        self._attr_device_info = device_info(sensor)
 
     @property
     def _data(self):
