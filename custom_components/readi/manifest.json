@@ -1,6 +1,7 @@
 {
   "domain": "readi",
   "name": "re@di Open Data",
+  "categories": ["weather_alerts", "sensors.temperature_humidity", "local_services"],
   "codeowners": ["@pfefferle"],
   "config_flow": true,
   "documentation": "https://github.com/pfefferle/homeassistant-readi",
