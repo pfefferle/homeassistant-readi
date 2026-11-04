@@ -1,0 +1,129 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose a city",
+        "data": {
+          "city": "City"
+        }
+      },
+      "sensors": {
+        "title": "Choose sensors",
+        "description": "Sensors are sorted by distance to your nearest zone. The nearest sensor of each type is preselected for every zone within 3 km. This is a community project, not an official service of re@di or the City of Ettlingen.",
+        "data": {
+          "temperature": "Temperature sensors",
+          "weather": "Weather stations",
+          "traffic": "Traffic counters"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the re@di open data portal."
+    },
+    "abort": {
+      "already_configured": "All cities with sensor data are already set up.",
+      "cannot_connect": "Could not reach the re@di open data portal."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Choose sensors",
+        "description": "Sensors are sorted by distance to your nearest zone.",
+        "data": {
+          "temperature": "Temperature sensors",
+          "weather": "Weather stations",
+          "traffic": "Traffic counters"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the re@di open data portal."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature": {
+        "name": "Temperature"
+      },
+      "humidity": {
+        "name": "Humidity"
+      },
+      "pressure": {
+        "name": "Pressure"
+      },
+      "pressure_absolute": {
+        "name": "Absolute pressure"
+      },
+      "precipitation_total": {
+        "name": "Precipitation total"
+      },
+      "precipitation_intensity": {
+        "name": "Precipitation intensity"
+      },
+      "wind_speed": {
+        "name": "Wind speed"
+      },
+      "wind_gust": {
+        "name": "Wind gust"
+      },
+      "wind_direction": {
+        "name": "Wind direction"
+      },
+      "global_radiation": {
+        "name": "Global radiation"
+      },
+      "dew_point": {
+        "name": "Dew point"
+      },
+      "wet_bulb_temperature": {
+        "name": "Wet-bulb temperature"
+      },
+      "wind_chill": {
+        "name": "Wind chill"
+      },
+      "air_density": {
+        "name": "Air density"
+      },
+      "specific_enthalpy": {
+        "name": "Specific enthalpy"
+      },
+      "absolute_humidity": {
+        "name": "Absolute humidity"
+      },
+      "lightning_interval": {
+        "name": "Lightning strikes"
+      },
+      "lightning_minute": {
+        "name": "Lightning strikes per minute"
+      },
+      "vehicles": {
+        "name": "Vehicles"
+      },
+      "average_speed": {
+        "name": "Average speed"
+      },
+      "vehicles_car": {
+        "name": "Cars"
+      },
+      "vehicles_truck": {
+        "name": "Trucks"
+      },
+      "vehicles_truck_trailer": {
+        "name": "Trucks with trailer"
+      },
+      "vehicles_van": {
+        "name": "Vans"
+      },
+      "vehicles_motorcycle": {
+        "name": "Motorcycles"
+      },
+      "vehicles_direction": {
+        "name": "Vehicles {direction}"
+      },
+      "last_measurement": {
+        "name": "Last measurement"
+      }
+    }
+  }
+}

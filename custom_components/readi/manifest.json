@@ -1,0 +1,12 @@
+{
+  "domain": "readi",
+  "name": "re@di Open Data",
+  "codeowners": ["@pfefferle"],
+  "config_flow": true,
+  "documentation": "https://github.com/pfefferle/homeassistant-readi",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/pfefferle/homeassistant-readi/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
