@@ -5,6 +5,9 @@
         "title": "Stadt auswählen",
         "data": {
           "city": "Stadt"
+        },
+        "data_description": {
+          "city": "Es werden nur Städte angezeigt, die Live-Sensordaten veröffentlichen."
         }
       },
       "sensors": {
@@ -14,6 +17,11 @@
           "temperature": "Temperatursensoren",
           "weather": "Wetterstationen",
           "traffic": "Verkehrszähler"
+        },
+        "data_description": {
+          "temperature": "LoRaWAN-Sensoren, die Temperatur und Luftfeuchtigkeit messen. Sensoren ohne bekannten Standort stehen am Ende der Liste.",
+          "weather": "Wetterstationen der Stadt. Jede Station bekommt eine Wetter-Entität mit den aktuellen Werten und Sensoren für alle Messwerte. Ihre Standorte sind noch nicht veröffentlicht, deshalb sind sie nach Namen sortiert.",
+          "traffic": "Zähler, die Fahrzeuge pro Stunde und deren Durchschnittsgeschwindigkeit erfassen. Die Werte werden stündlich aktualisiert, mit etwa einer Stunde Verzögerung."
         }
       }
     },
@@ -34,6 +42,11 @@
           "temperature": "Temperatursensoren",
           "weather": "Wetterstationen",
           "traffic": "Verkehrszähler"
+        },
+        "data_description": {
+          "temperature": "LoRaWAN-Sensoren, die Temperatur und Luftfeuchtigkeit messen. Sensoren ohne bekannten Standort stehen am Ende der Liste.",
+          "weather": "Wetterstationen der Stadt. Jede Station bekommt eine Wetter-Entität mit den aktuellen Werten und Sensoren für alle Messwerte. Ihre Standorte sind noch nicht veröffentlicht, deshalb sind sie nach Namen sortiert.",
+          "traffic": "Zähler, die Fahrzeuge pro Stunde und deren Durchschnittsgeschwindigkeit erfassen. Die Werte werden stündlich aktualisiert, mit etwa einer Stunde Verzögerung."
         }
       }
     },
@@ -43,33 +56,87 @@
   },
   "entity": {
     "sensor": {
-      "temperature": { "name": "Temperatur" },
-      "humidity": { "name": "Luftfeuchtigkeit" },
-      "pressure": { "name": "Luftdruck" },
-      "pressure_absolute": { "name": "Absoluter Luftdruck" },
-      "precipitation_total": { "name": "Niederschlag gesamt" },
-      "precipitation_intensity": { "name": "Niederschlagsintensität" },
-      "wind_speed": { "name": "Windgeschwindigkeit" },
-      "wind_gust": { "name": "Windböe" },
-      "wind_direction": { "name": "Windrichtung" },
-      "global_radiation": { "name": "Globalstrahlung" },
-      "dew_point": { "name": "Taupunkt" },
-      "wet_bulb_temperature": { "name": "Feuchtkugeltemperatur" },
-      "wind_chill": { "name": "Windchill" },
-      "air_density": { "name": "Luftdichte" },
-      "specific_enthalpy": { "name": "Spezifische Enthalpie" },
-      "absolute_humidity": { "name": "Absolute Luftfeuchtigkeit" },
-      "lightning_interval": { "name": "Blitze" },
-      "lightning_minute": { "name": "Blitze pro Minute" },
-      "vehicles": { "name": "Fahrzeuge" },
-      "average_speed": { "name": "Durchschnittsgeschwindigkeit" },
-      "vehicles_car": { "name": "Pkw" },
-      "vehicles_truck": { "name": "Lkw" },
-      "vehicles_truck_trailer": { "name": "Lkw mit Anhänger" },
-      "vehicles_van": { "name": "Leichte Nutzfahrzeuge" },
-      "vehicles_motorcycle": { "name": "Motorräder" },
-      "vehicles_direction": { "name": "Fahrzeuge {direction}" },
-      "last_measurement": { "name": "Letzte Messung" }
+      "temperature": {
+        "name": "Temperatur"
+      },
+      "humidity": {
+        "name": "Luftfeuchtigkeit"
+      },
+      "pressure": {
+        "name": "Luftdruck"
+      },
+      "pressure_absolute": {
+        "name": "Absoluter Luftdruck"
+      },
+      "precipitation_total": {
+        "name": "Niederschlag gesamt"
+      },
+      "precipitation_intensity": {
+        "name": "Niederschlagsintensität"
+      },
+      "wind_speed": {
+        "name": "Windgeschwindigkeit"
+      },
+      "wind_gust": {
+        "name": "Windböe"
+      },
+      "wind_direction": {
+        "name": "Windrichtung"
+      },
+      "global_radiation": {
+        "name": "Globalstrahlung"
+      },
+      "dew_point": {
+        "name": "Taupunkt"
+      },
+      "wet_bulb_temperature": {
+        "name": "Feuchtkugeltemperatur"
+      },
+      "wind_chill": {
+        "name": "Windchill"
+      },
+      "air_density": {
+        "name": "Luftdichte"
+      },
+      "specific_enthalpy": {
+        "name": "Spezifische Enthalpie"
+      },
+      "absolute_humidity": {
+        "name": "Absolute Luftfeuchtigkeit"
+      },
+      "lightning_interval": {
+        "name": "Blitze"
+      },
+      "lightning_minute": {
+        "name": "Blitze pro Minute"
+      },
+      "vehicles": {
+        "name": "Fahrzeuge"
+      },
+      "average_speed": {
+        "name": "Durchschnittsgeschwindigkeit"
+      },
+      "vehicles_car": {
+        "name": "Pkw"
+      },
+      "vehicles_truck": {
+        "name": "Lkw"
+      },
+      "vehicles_truck_trailer": {
+        "name": "Lkw mit Anhänger"
+      },
+      "vehicles_van": {
+        "name": "Leichte Nutzfahrzeuge"
+      },
+      "vehicles_motorcycle": {
+        "name": "Motorräder"
+      },
+      "vehicles_direction": {
+        "name": "Fahrzeuge {direction}"
+      },
+      "last_measurement": {
+        "name": "Letzte Messung"
+      }
     }
   }
 }

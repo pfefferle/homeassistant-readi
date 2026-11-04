@@ -5,6 +5,9 @@
         "title": "Choose a city",
         "data": {
           "city": "City"
+        },
+        "data_description": {
+          "city": "Only cities that publish live sensor data are listed."
         }
       },
       "sensors": {
@@ -14,6 +17,11 @@
           "temperature": "Temperature sensors",
           "weather": "Weather stations",
           "traffic": "Traffic counters"
+        },
+        "data_description": {
+          "temperature": "LoRaWAN sensors that measure temperature and humidity. Sensors without a known position are listed at the end.",
+          "weather": "Weather stations of the city. Each station gets a weather entity with the current values and sensors for all measured values. Their positions are not published yet, so they are listed by name.",
+          "traffic": "Counters that count vehicles per hour and their average speed. The values are updated hourly, about one hour behind."
         }
       }
     },
@@ -34,6 +42,11 @@
           "temperature": "Temperature sensors",
           "weather": "Weather stations",
           "traffic": "Traffic counters"
+        },
+        "data_description": {
+          "temperature": "LoRaWAN sensors that measure temperature and humidity. Sensors without a known position are listed at the end.",
+          "weather": "Weather stations of the city. Each station gets a weather entity with the current values and sensors for all measured values. Their positions are not published yet, so they are listed by name.",
+          "traffic": "Counters that count vehicles per hour and their average speed. The values are updated hourly, about one hour behind."
         }
       }
     },
